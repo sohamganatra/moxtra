@@ -11,8 +11,17 @@
 
 <script>
 function myFunction() {
-	redirect_url = "https://api.moxtra.com/oauth/authorize?client_id=s802Szl4uzw&redirect_uri=https://moxtra.herokuapp.com/&response_type=token"
-	window.location.href = redirect_url
+ $.post("demo_test_post.asp",
+    {
+       client_id: "s802Szl4uzw",
+       client_secret: "shtHvMwyrlw",
+       grant_type:'http://www.moxtra.com/auth_uniqueid',
+       uniqueid:'sohamganatra1@gmail.com',
+       timestamp:Date.now()
+    },
+    function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
 }
 
 </script>
