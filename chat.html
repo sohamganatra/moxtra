@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" id="jqueryjs"></script>
+	<script type="text/javascript" src="https://www.moxtra.com/api/js/moxtra-latest.js" id="moxtrajs" ></script>
+</head>
+
+<body>
+	<div id="chatbox"></div>
+	<button onclick="myFunction()">Logon & and start chat</button>
+</body>
+
+<script>
+function myFunction() {
+	redirect_url = "https://apisandbox.moxtra.com/oauth/authorize?client_id=s802Szl4uzw&&response_type=token"
+	window.location.href = redirect_url
+}
+
+</script>
+
+</html>
